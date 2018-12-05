@@ -4,7 +4,7 @@
 #define STATUS_LED  13 //B00100000  MSB----LSB
 #define DATA_PIN    11 //B00001000
 #define NUM_LEDS    10 //number of used leds
-#pragma message (__DATE__ " " __TIME__ " " VERSION)
+#pragma message ("TIME: "__DATE__ " " __TIME__ " Version: " VERSION)
 
 //####----variable declarations----####//
 CRGB leds[NUM_LEDS];    // Define the array of leds
@@ -19,13 +19,12 @@ void serialEvent();
 //####----function definitions----####//
 void setup(){
     pinMode(STATUS_LED,OUTPUT);
-    pinMode(DATA_PIN,OUTPUT);
-    //DDRB = DDRB | B00101000 //setting PIN 13 and PIN 11 as an output with one line.
-    digitalWrite(STATUS_LED,HIGH);
+    pinMode(DATA_PIN,OUTPUT);    //DDRB = DDRB | B00101000; //setting PIN 13 and PIN 11 as an output with one line.
+    digitalWrite(STATUS_LED,HIGH);    //PORTB = PORTB | B00100000;
     Serial.begin(BAUD);
     while(!Serial){;}
     FastLED.addLeds<WS2812B, DATA_PIN, RGB>(leds, NUM_LEDS);
-    digitalWrite(STATUS_LED,LOW);
+    digitalWrite(STATUS_LED,LOW);    //PORTB = PORTB & B11011111;
 }
 
 void loop(){
