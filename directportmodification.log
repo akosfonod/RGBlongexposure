@@ -1,0 +1,60 @@
+Processing nanoatmega328 (platform: atmelavr; board: nanoatmega328; framework: arduino)
+
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/atmelavr/nanoatmega328.html
+PLATFORM: Atmel AVR > Arduino Nano ATmega328
+HARDWARE: ATMEGA328P 16MHz 2KB RAM (30KB Flash)
+Converting LongExposure.ino
+Library Dependency Finder -> http://bit.ly/configure-pio-ldf
+LDF MODES: FINDER(chain) COMPATIBILITY(soft)
+Collected 25 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- <FastLED> 3.2.1
+|   |-- <SoftwareSerial> 1.0
+Compiling .pioenvs\nanoatmega328\lib59b\FastLED_ID126\FastLED.cpp.o
+Compiling .pioenvs\nanoatmega328\lib59b\FastLED_ID126\bitswap.cpp.o
+Compiling .pioenvs\nanoatmega328\lib59b\FastLED_ID126\colorpalettes.cpp.o
+Compiling .pioenvs\nanoatmega328\lib59b\FastLED_ID126\colorutils.cpp.o
+Compiling .pioenvs\nanoatmega328\lib59b\FastLED_ID126\hsv2rgb.cpp.o
+Compiling .pioenvs\nanoatmega328\lib59b\FastLED_ID126\lib8tion.cpp.o
+Compiling .pioenvs\nanoatmega328\lib59b\FastLED_ID126\noise.cpp.o
+Compiling .pioenvs\nanoatmega328\lib59b\FastLED_ID126\power_mgt.cpp.o
+Compiling .pioenvs\nanoatmega328\lib59b\FastLED_ID126\wiring.cpp.o
+Compiling .pioenvs\nanoatmega328\src\LongExposure.ino.cpp.o
+Compiling .pioenvs\nanoatmega328\lib104\SoftwareSerial\SoftwareSerial.cpp.o
+Archiving .pioenvs\nanoatmega328\libFrameworkArduinoVariant.a
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\CDC.cpp.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\HardwareSerial.cpp.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\HardwareSerial0.cpp.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\HardwareSerial1.cpp.o
+Archiving .pioenvs\nanoatmega328\lib104\libSoftwareSerial.a
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\HardwareSerial2.cpp.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\HardwareSerial3.cpp.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\IPAddress.cpp.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\PluggableUSB.cpp.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\Print.cpp.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\Stream.cpp.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\Tone.cpp.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\USBCore.cpp.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\WInterrupts.c.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\WMath.cpp.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\WString.cpp.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\abi.cpp.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\hooks.c.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\main.cpp.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\new.cpp.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\wiring.c.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\wiring_analog.c.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\wiring_digital.c.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\wiring_pulse.S.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\wiring_pulse.c.o
+Compiling .pioenvs\nanoatmega328\FrameworkArduino\wiring_shift.c.o
+Archiving .pioenvs\nanoatmega328\libFrameworkArduino.a
+Linking .pioenvs\nanoatmega328\firmware.elf
+Checking size .pioenvs\nanoatmega328\firmware.elf
+Building .pioenvs\nanoatmega328\firmware.hex
+Memory Usage -> http://bit.ly/pio-memory-usage
+DATA:    [=         ]  14.8% (used 304 bytes from 2048 bytes)
+PROGRAM: [=         ]  14.7% (used 4512 bytes from 30720 bytes)
+ [SUCCESS] Took 3.46 seconds 
