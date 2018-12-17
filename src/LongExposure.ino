@@ -3,7 +3,7 @@
 #define BAUD        115200
 #define STATUS_LED  13 //B00100000  MSB----LSB
 #define DATA_PIN    11 //B00001000
-#define NUM_LEDS    10 //number of used leds
+#define NUM_LEDS    5 //number of used leds
 #pragma message ("TIME: "__DATE__ " " __TIME__ " Version: " VERSION)
 
 //####----variable declarations----####//
@@ -23,7 +23,10 @@ void setup(){
     digitalWrite(STATUS_LED,HIGH);    //PORTB = PORTB | B00100000;
     Serial.begin(BAUD);
     while(!Serial){;}
-    FastLED.addLeds<WS2812B, DATA_PIN, RGB>(leds, NUM_LEDS);
+    FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);
+    FastLED.setBrightness(60);
+    FastLED.clear(false);
+    FastLED.show();
     digitalWrite(STATUS_LED,LOW);    //PORTB = PORTB & B11011111;
 }
 
